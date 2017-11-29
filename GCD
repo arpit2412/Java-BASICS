@@ -1,0 +1,24 @@
+import java.io.*;
+class gcd
+{
+	public static void main(String args[])
+	{
+		Console con=System.console();
+		int a,b,x=1;
+		System.out.print("enter the first number:");
+		a=Integer.parseInt(con.readLine());
+		System.out.print("enter the second number:");
+		b=Integer.parseInt(con.readLine());
+		for(int i=1;i<a||i<b;i++)
+		{
+			if(a%i==0)
+			{
+				if(b%i==0)
+				{
+					x=i;
+				}
+			}
+		}
+		System.out.print("the gcd is :"+x);
+	}
+}
